@@ -1,6 +1,6 @@
 import { ReactComponent as CartWidget } from './CartWidget.svg'
 import { useState } from "react";
-export default function Navbar(){
+export default function Navbar(props){
 
   const [isNavExpanded, setIsNavExpanded] = useState(false)
     
@@ -24,7 +24,7 @@ export default function Navbar(){
             </ul>
             <div className="cartWidget">
             <a href="#" className="cart"><CartWidget /></a>
-                <p className="cartCount">1</p>
+                <p className="cartCount">{props.cartCount}</p>
             </div>
         </div>
     )

@@ -35,14 +35,22 @@ h1 {
   }
 
   .logoCollapse {
-    color:#8c3c96;
+    color: #8c3c96;
     font-size: 1.5em;
   }
 
   @keyframes logo {
-    from {color: #8c3c96;}
-    50% {color: #ffc904;}
-    to {color: #303091;}
+    from {
+      color: #8c3c96;
+    }
+
+    50% {
+      color: #ffc904;
+    }
+
+    to {
+      color: #303091;
+    }
   }
 
   .logoCollapse:hover {
@@ -71,7 +79,7 @@ h1 {
   }
 
   .cart:hover {
-    background-color:#ededed;
+    background-color: #ededed;
     border-radius: 15px;
   }
 
@@ -125,7 +133,7 @@ h1 {
 }
 
 @media only screen and (min-width: 769px) {
-  
+
   .navBar {
     display: flex;
     justify-content: space-between;
@@ -173,7 +181,7 @@ h1 {
   }
 
   .cart:hover {
-    background-color:#ededed;
+    background-color: #ededed;
     border-radius: 15px;
   }
 
@@ -182,9 +190,17 @@ h1 {
   }
 
   @keyframes logo {
-    from {color: #8c3c96;}
-    50% {color: #ffc904;}
-    to {color: #303091;}
+    from {
+      color: #8c3c96;
+    }
+
+    50% {
+      color: #ffc904;
+    }
+
+    to {
+      color: #303091;
+    }
   }
 
   .logo:hover {
@@ -194,5 +210,3 @@ h1 {
     color: #ffc904;
   }
 }
-
-

@@ -6,7 +6,7 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Navbar cartCount={0}/>
       <ItemListContainer />
     </div>
   );
