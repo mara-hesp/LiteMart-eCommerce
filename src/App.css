@@ -1,38 +1,198 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+h1 {
   text-align: center;
+  margin-top: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@media only screen and (max-width: 768px) {
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .logohidden {
+    display: none;
+  }
+
+  .navBar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+    background-color: #f8f9fa;
+    align-items: center;
+    position: relative;
+    margin-left: auto;
+  }
+
+  .navCollapse {
+    display: flex;
+    align-items: center;
+  }
+
+  .logoCollapse {
+    color:#8c3c96;
+    font-size: 1.5em;
+  }
+
+  @keyframes logo {
+    from {color: #8c3c96;}
+    50% {color: #ffc904;}
+    to {color: #303091;}
+  }
+
+  .logoCollapse:hover {
+    animation-name: logo;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    color: #ffc904;
+  }
+
+  .cartWidget {
+    display: flex;
+    align-items: flex-start;
+
+  }
+
+  .cartCount {
+    font-size: .6em;
+    background-color: #8c3c96;
+    padding: 0px 5px;
+    color: white;
+    border-radius: 100%;
+  }
+
+  .cart {
+    padding: 5px;
+  }
+
+  .cart:hover {
+    background-color:#ededed;
+    border-radius: 15px;
+  }
+
+  .nav {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f8f9fa;
+    border-top: 1px solid rgb(228, 228, 228);
+    display: none;
+  }
+
+  .nav.expanded {
+    display: block;
+  }
+
+  .nav li {
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0;
+  }
+
+  .nav li:hover {
+    background-color: #8c3c96;
+    color: white;
+  }
+
+  .nav li a {
+    color: #8c3c96;
+    width: 100%;
+    font-size: 1.2em;
+  }
+
+  .nav li a:hover {
+    color: white;
+  }
+
+  .collapse {
+    padding: 3px 8px;
+    border: none;
+    margin-right: 8px;
+    border-radius: 8px;
+    color: #8c3c96;
+  }
+
+  .collapse:hover {
+    background-color: #f8f9fa;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media only screen and (min-width: 769px) {
+  
+  .navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+  }
+
+  .navCollapse {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+  }
+
+  .nav a {
+    color: #8c3c96;
+  }
+
+  .nav a:hover {
+    color: #ffc904;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .cartWidget {
+    display: flex;
+    align-items: flex-start;
+
+  }
+
+  .cartCount {
+    font-size: .6em;
+    background-color: #8c3c96;
+    padding: 0px 5px;
+    color: white;
+    border-radius: 100%;
+  }
+
+  .cart {
+    padding: 5px;
+  }
+
+  .cart:hover {
+    background-color:#ededed;
+    border-radius: 15px;
+  }
+
+  .logohidden {
+    font-size: 1.5em;
+  }
+
+  @keyframes logo {
+    from {color: #8c3c96;}
+    50% {color: #ffc904;}
+    to {color: #303091;}
+  }
+
+  .logo:hover {
+    animation-name: logo;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    color: #ffc904;
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
