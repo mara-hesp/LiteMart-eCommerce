@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Navbar cartCount={0}/>
-      <ItemListContainer />
+      <ItemListContainer title='Productos' />
     </div>
   );
 }

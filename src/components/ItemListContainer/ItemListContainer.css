@@ -1,0 +1,15 @@
+.itemList {
+    display: flex;
+    padding: 40px;
+    gap: 1em;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px;
+}
