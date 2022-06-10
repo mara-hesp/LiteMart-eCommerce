@@ -1,0 +1,30 @@
+.itemDetail {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin: 40px auto;
+    background-color: #f8f9fa;
+    padding: 20px;
+    width: fit-content;
+}
+
+.itemDetail img {
+    width: 500px;
+}
+
+.itemDetail p {
+    color: #bbbbbb;
+    font-size: .7em;
+}
+
+.itemDetail h2 {
+    line-height: 1em;
+    margin-bottom: 10px;
+    color: rgb(48, 48, 48);
+    font-size: 1.6em;
+}
+
+.itemDetail h3 {
+    color: #8c3c96;
+    font-size: 1.3em;
+}
