@@ -2,12 +2,16 @@ import { Link } from "react-router-dom"
 
 const Item = ({ name, img, price, id }) => {
     return (
-        <li className="item">
-            <img src={img} alt={name}/>
-            <p>{name}</p>
-            <h3>${price}</h3>
-            <Link to={`/detail/${id}`}><button>Ver detalles</button></Link>
-        </li>
+        <div>
+            <li className="item">
+                <img src={img} alt={name}/>
+                <div class="itemInfo">
+                <p>{name}</p>
+                <h3>${price}</h3>
+                </div>
+            </li>
+            <Link to={`/detail/${id}`}className="itemBtn"><button>Ver detalles</button></Link>
+        </div>
     )
 }
 

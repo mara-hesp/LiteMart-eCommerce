@@ -1,7 +1,12 @@
+body {
+    background-color: rgb(244, 244, 244);
+}
+
 .itemList {
     display: flex;
+    flex-wrap: wrap;
     padding: 40px;
-    gap: 1em;
+    gap: 2em;
 }
 
 .item {
@@ -10,6 +15,50 @@
     width: fit-content;
     justify-content: center;
     align-items: center;
-    background-color: #f8f9fa;
-    padding: 10px;
+    padding: 5px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.itemInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px 5px 0px;
+}
+
+.item img {
+    width: 90%;
+}
+
+.item p {
+    font-size: 1em;
+}
+
+.item h3 {
+    color: #8c3c96;
+    font-size: 1em;
+}
+
+.itemBtn {
+    background-color: #fff;
+}
+
+.itemBtn button {
+    border: none;
+    cursor: pointer;
+    font-size: .8em;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 8px;
+    margin: 0px;
+}
+
+.itemBtn button:hover {
+    background-color: #8c3c96;
+}
+
+.itemBtn button:active {
+    background-color: #54245b;
 }

@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import { getProducts, getProductsByCategory } from '../../asyncmock'
 import ItemList from '../ItemList/ItemList'
 import { useParams } from 'react-router-dom'
+import Loading from '../Loading/Loading'
 
 const ItemListContainer = (props) => {
     const [products, setProducts] = useState([])
@@ -25,7 +26,7 @@ const ItemListContainer = (props) => {
     }, [categoryId])
 
     if(loading) {
-        return <h2>Cargando...</h2>
+        return <Loading />
     }
 
     return (
