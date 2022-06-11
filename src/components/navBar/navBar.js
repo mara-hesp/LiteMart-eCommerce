@@ -10,16 +10,16 @@ export default function Navbar(props){
         <div className="navBar">
             <div className="navCollapse">
                 <button className="collapse" onClick={() => {setIsNavExpanded(!isNavExpanded);}}>+</button>
-                <Link className="logoCollapse">LiteHome</Link>
+                <Link to ='/' className="logoCollapse">LiteHome</Link>
             </div>
             <ul className={isNavExpanded ? "nav expanded" : "nav"}>
-                <li className="logohidden"><a href="#" className="logo">LiteHome</a></li>
-                <li><Link to='category/colgantes'>Colgantes</Link></li>
-                <li><Link to='category/techo'>Lámparas de Techo</Link></li>
-                <li><Link to='category/pared'>Lámparas de Pared</Link></li>
+                <li className="logohidden"><Link to ='/' className="logo">LiteHome</Link></li>
+                <li><Link to='/category/colgantes'>Colgantes</Link></li>
+                <li><Link to='/category/techo'>Lámparas de Techo</Link></li>
+                <li><Link to='/category/pared'>Lámparas de Pared</Link></li>
             </ul>
             <div className="cartWidget">
-              <a href="#" className="cart"><CartWidget /></a>
+              <Link to ='/' className="cart"><CartWidget /></Link>
               <p className="cartCount">{props.cartCount}</p>
             </div>
         </div>

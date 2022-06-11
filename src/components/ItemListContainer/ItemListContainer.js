@@ -31,7 +31,7 @@ const ItemListContainer = (props) => {
     return (
     <div>
         <h1>{props.title}</h1>
-        {products.lenght > 0 ? <ItemList products={products}/>
+        {products.length > 0 ? <ItemList products={products}/>
         : <h2>No hay productos</h2>}
     </div>
     )
