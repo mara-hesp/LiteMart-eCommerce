@@ -18,4 +18,4 @@ Para instalar las dependencias.
 Para ejecutar el servidor del desarrollo.
 Abrir [http://localhost:3000](http://localhost:3000) para visualizar en el browser.
 
-![](/litehome-store/gif-primera-entrega-react.gif)
+<img src="gif-primera-entrega-react.gif" alt="App Preview Gif">
