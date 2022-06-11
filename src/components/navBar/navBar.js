@@ -1,5 +1,7 @@
 import CartWidget from '../CartWidget/CartWidget';
 import { useState } from 'react'
+import { Link } from 'react-router-dom';
+import './navBar.css'
 export default function Navbar(props){
 
   const [isNavExpanded, setIsNavExpanded] = useState(false)
@@ -8,15 +10,13 @@ export default function Navbar(props){
         <div className="navBar">
             <div className="navCollapse">
                 <button className="collapse" onClick={() => {setIsNavExpanded(!isNavExpanded);}}>+</button>
-                <a href="#" className="logoCollapse">LiteHome</a>
+                <Link className="logoCollapse">LiteHome</Link>
             </div>
             <ul className={isNavExpanded ? "nav expanded" : "nav"}>
                 <li className="logohidden"><a href="#" className="logo">LiteHome</a></li>
-                <li><a href="#">Colgantes</a></li>
-                <li><a href="#">Lámparas de Techo</a></li>
-                <li><a href="#">Lámparas de Mesa</a></li>
-                <li><a href="#">Lámparas de Pared</a></li>
-                <li><a href="#">Lámparas de Jardín</a></li>
+                <li><Link to='category/colgantes'>Colgantes</Link></li>
+                <li><Link to='category/techo'>Lámparas de Techo</Link></li>
+                <li><Link to='category/pared'>Lámparas de Pared</Link></li>
             </ul>
             <div className="cartWidget">
               <a href="#" className="cart"><CartWidget /></a>
@@ -24,6 +24,5 @@ export default function Navbar(props){
             </div>
         </div>
     )
+
 }
-
-
