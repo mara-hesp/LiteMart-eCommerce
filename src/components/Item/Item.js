@@ -5,7 +5,7 @@ const Item = ({ name, img, price, id }) => {
         <div>
             <li className="item">
                 <img src={img} alt={name}/>
-                <div class="itemInfo">
+                <div className="itemInfo">
                 <p>{name}</p>
                 <h3>${price}</h3>
                 </div>

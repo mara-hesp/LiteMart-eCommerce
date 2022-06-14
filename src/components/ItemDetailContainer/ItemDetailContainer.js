@@ -11,7 +11,7 @@ const ItemDetailContainer = (props) => {
         getProductsById(productId).then(response => {
             setProduct(response)
         })
-    }, [])
+    }, [productId])
 
     return (
         <div>

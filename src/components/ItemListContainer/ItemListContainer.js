@@ -14,14 +14,19 @@ const ItemListContainer = (props) => {
         if(!categoryId) {
             getProducts().then(response => {
             setProducts(response)
+        }).catch(error => {
+            console.log(error)
         }).finally(() => {
             setLoading(false)
         })
     } else {
-            {
-                getProductsByCategory(categoryId).then(response => {
-                setProducts(response)
-            })}
+            getProductsByCategory(categoryId).then(response => {
+            setProducts(response)
+            }).catch(error => {
+                console.log(error)
+            }).finally(() => {
+                setLoading(false)
+            })
         }
     }, [categoryId])
 
