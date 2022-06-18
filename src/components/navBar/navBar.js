@@ -18,10 +18,7 @@ export default function Navbar(props){
                 <li><Link to='/category/techo'>Lámparas de Techo</Link></li>
                 <li><Link to='/category/pared'>Lámparas de Pared</Link></li>
             </ul>
-            <div className="cartWidget">
-              <Link to ='/' className="cart"><CartWidget /></Link>
-              <p className="cartCount">{props.cartCount}</p>
-            </div>
+              <Link to ='/cart' className="cart"><CartWidget /></Link>
         </div>
     )
 

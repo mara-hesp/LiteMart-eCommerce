@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 
 const Item = ({ name, img, price, id }) => {
+
     return (
         <div>
             <li className="item">
