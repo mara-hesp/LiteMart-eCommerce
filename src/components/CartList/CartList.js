@@ -4,9 +4,10 @@ import CartItem from '../CartItem/CartItem'
 
 const CartList = () => {
 
-    const { cart } = useContext(CartContext)
+    const { cart, clearCart } = useContext(CartContext)
 
     return (
+        <div className='cartContainer'>
         <ul className="cartList">
             <li className='cartItemHead'>
                     <p className='cartName'>Producto</p>
@@ -16,6 +17,8 @@ const CartList = () => {
             </li>
         {cart.map(prod => <CartItem key={prod.id} {...prod} />)}
         </ul>
+        <button className="btnClear" onClick={() => clearCart()}>Limpiar carrito</button>
+        </div>
     )
 }
 

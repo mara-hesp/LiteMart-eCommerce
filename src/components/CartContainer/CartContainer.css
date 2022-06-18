@@ -46,6 +46,32 @@
     background-color: red;
 }
 
-..btnCartItem:active {
+.btnCartItem:active {
     background-color: black;
+}
+
+.btnClear {
+    border: none;
+    cursor: pointer;
+    font-size: .8em;
+    background-color: rgb(216, 49, 49);
+    color: #fff;
+    padding: 8px 16px;
+    margin-top: 15px;
+    width: fit-content;
+}
+
+.btnClear:hover {
+    background-color: red;
+}
+
+.btnClear:active {
+    background-color: black;
+}
+
+.cartContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
