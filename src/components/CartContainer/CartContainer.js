@@ -1,11 +1,14 @@
-// import { useContext } from 'react'
-// import CartContext from '../../context/CartContext'
 import './CartContainer.css'
-
-// const { isInCart, RemoveItem } = useContext(CartContext)
+import CartList from '../CartList/CartList'
 
 const CartContainer = () => {
-    return <h1>CART</h1>
+
+    return (
+    <div>
+        <h1>CART</h1>
+        <CartList />
+    </div>
+    )
 }
 
 export default CartContainer

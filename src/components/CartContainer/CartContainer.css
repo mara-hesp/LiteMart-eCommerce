@@ -1,0 +1,51 @@
+.cartList {
+    margin: auto;
+    width: 80%;
+    margin-top: 2em;
+}
+
+.cartItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 40px 0px;
+    border: solid 1px rgb(244, 244, 244);
+    text-align: center;
+}
+
+.cartItemHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 20px 0px;
+    border: solid 1px rgb(244, 244, 244);
+    text-align: center;
+}
+
+.cartName, .cartPrice, .cartQuantity {
+    width: 30%;
+}
+
+.cartRemove {
+    width: 10%;
+}
+
+.btnCartItem {
+    cursor: pointer;
+    background-color: rgb(216, 49, 49);
+    color: #fff;
+    border: none;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 100%;
+}
+
+.btnCartItem:hover {
+    background-color: red;
+}
+
+..btnCartItem:active {
+    background-color: black;
+}
