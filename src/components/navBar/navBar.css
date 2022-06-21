@@ -8,6 +8,14 @@
   text-align: center;
 }
 
+.cart {
+  padding: 5px;
+}
+
+.cartEmpty {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
 
     .logohidden {
@@ -61,10 +69,6 @@
       display: flex;
       align-items: flex-start;
   
-    }
-  
-    .cart {
-      padding: 5px;
     }
   
     .cart:hover {
@@ -155,10 +159,6 @@
       display: flex;
       align-items: flex-start;
   
-    }
-  
-    .cart {
-      padding: 5px;
     }
   
     .cart:hover {

@@ -24,8 +24,16 @@
     text-align: center;
 }
 
-.cartName, .cartPrice, .cartQuantity {
+.cartName {
     width: 30%;
+}
+
+.cartPrice, .cartQuantity, .cartTotal {
+    width: 20%;
+}
+
+.cartTotal {
+    font-weight: 600;
 }
 
 .cartRemove {
@@ -54,19 +62,19 @@
     border: none;
     cursor: pointer;
     font-size: .8em;
-    background-color: rgb(216, 49, 49);
-    color: #fff;
+    background-color: #F4F4F4;
+    color: rgb(216, 49, 49);
     padding: 8px 16px;
     margin-top: 15px;
     width: fit-content;
 }
 
 .btnClear:hover {
-    background-color: red;
+    text-decoration: underline;
 }
 
 .btnClear:active {
-    background-color: black;
+    color: black;
 }
 
 .cartContainer {
@@ -74,4 +82,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.btnPayment {
+    border: none;
+    cursor: pointer;
+    font-size: .8em;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    margin-top: 20px;
+    width: fit-content;
+}
+
+.btnPayment:hover {
+    background-color: #8c3c96;
 }

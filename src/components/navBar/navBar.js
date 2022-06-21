@@ -2,9 +2,13 @@ import CartWidget from '../CartWidget/CartWidget';
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
 import './navBar.css'
-export default function Navbar(props){
+import { useContext } from 'react'
+import CartContext from '../../context/CartContext'
 
+export default function Navbar(){
   const [isNavExpanded, setIsNavExpanded] = useState(false)
+  const { cart } = useContext(CartContext)
+
     
     return (
         <div className="navBar">
@@ -18,7 +22,7 @@ export default function Navbar(props){
                 <li><Link to='/category/techo'>Lámparas de Techo</Link></li>
                 <li><Link to='/category/pared'>Lámparas de Pared</Link></li>
             </ul>
-              <Link to ='/cart' className="cart"><CartWidget /></Link>
+              <Link to ='/cart' className={cart.length > 0 ? 'cart' : 'cartEmpty'}><CartWidget /></Link>
         </div>
     )
 
