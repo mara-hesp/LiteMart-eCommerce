@@ -1,11 +1,14 @@
 import { useContext } from 'react'
 import CartContext from '../../context/CartContext'
+import NotificationContext from '../../notification/Notification'
 
 const CartItem = ({ name, count, price, id }) => {
     const { removeItems } = useContext(CartContext)
+    const setNotification = useContext(NotificationContext)
 
     const handleRemove = (id) => {
         removeItems(id)
+        setNotification('error', `Se eliminó ${name} del carrito`)
     }
 
     const subTotal = (count, price) => {
