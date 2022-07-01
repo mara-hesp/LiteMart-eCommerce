@@ -1,0 +1,38 @@
+.checkout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin-bottom: 2em;
+    font-weight: 500;
+}
+
+form {
+    margin: 3%;
+    background-color: #fff;
+    width: 500px;
+    padding: 3% 5%;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 3%;
+}
+
+.submitBtn {
+    margin-top: 10px;
+    padding: 2.5% 5%;
+    width: fit-content;
+    border: none;
+    background-color: #000;
+    color: #fff;
+}
+
+.submitBtn:hover {
+    cursor: pointer;
+    background-color: #8c3c96;
+}

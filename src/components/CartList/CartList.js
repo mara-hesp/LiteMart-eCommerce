@@ -1,10 +1,13 @@
 import { useContext } from 'react'
 import CartContext from '../../context/CartContext'
 import CartItem from '../CartItem/CartItem'
+import { Link } from 'react-router-dom'
 
 const CartList = () => {
 
-    const { cart, clearCart } = useContext(CartContext)
+    const { cart, clearCart, getTotal } = useContext(CartContext)
+
+    const total = getTotal()
 
     return (
         <div className='cartContainer'>
@@ -21,12 +24,12 @@ const CartList = () => {
                     <p className='cartName'></p>
                     <p className='cartPrice'></p>
                     <p className='cartQuantity'>Total</p>
-                    <p className='cartTotal'>${cart.reduce((total, item)=>total+(item.price*item.count),0)}</p>
+                    <p className='cartTotal'>${total}</p>
                     <div className='cartRemove'></div>
             </li>
         </ul>
+        <Link to='/checkout'><button className='btnPayment'>Proceder al Pago</button></Link>
         <button className="btnClear" onClick={() => clearCart()}>Limpiar carrito</button>
-        <button className='btnPayment'>Proceder al Pago</button>
         </div>
     )
 }
