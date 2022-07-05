@@ -2,9 +2,7 @@
 
 E-Commerce para la venta de productos iluminación y ventilación para la marca LiteHome.
 
-Este proyecto fue creado con:
-[Create React App](https://create-react-app.dev)
-[Firebase](https://firebase.com)
+Este proyecto fue creado con [Create React App](https://create-react-app.dev) y [Firebase](https://firebase.com).
 
 ## Available Scripts
 
