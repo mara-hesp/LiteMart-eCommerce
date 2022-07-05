@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from 'firebase/firestore'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAcvDD3D6CCWImra5kja2MlUbc6vvp2k8E",
-  authDomain: "litehome-store.firebaseapp.com",
-  projectId: "litehome-store",
-  storageBucket: "litehome-store.appspot.com",
-  messagingSenderId: "1087637456589",
-  appId: "1:1087637456589:web:7d3b4c7d720bb71bd74b84"
+  apiKey: process.env.REACT_APP_apiKey,
+  authDomain: process.env.REACT_APP_authDomain,
+  projectId: process.env.REACT_APP_projectId,
+  storageBucket: process.env.REACT_APP_storageBucket,
+  messagingSenderId: process.env.REACT_APP_messaginSenderId,
+  appId: process.env.REACT_APP_appId
 };
 
 const app = initializeApp(firebaseConfig);

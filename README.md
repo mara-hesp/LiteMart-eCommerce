@@ -2,7 +2,9 @@
 
 E-Commerce para la venta de productos iluminación y ventilación para la marca LiteHome.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto fue creado con:
+[Create React App](https://create-react-app.dev)
+[Firebase](https://firebase.com)
 
 ## Available Scripts
 
@@ -18,4 +20,20 @@ Para instalar las dependencias.
 Para ejecutar el servidor del desarrollo.
 Abrir [http://localhost:3000](http://localhost:3000) para visualizar en el browser.
 
-<img src="gif-primera-entrega-react.gif" alt="App Preview Gif">
+## `Funciones de la aplicación`
+- Renderizar los productos cargados en la firebase.
+- Filtrar estos productos por categoría.
+- Seleccionar cierta cantidad de cierto producto para agregar al carrito.
+- Crear listado de productos en el carrito.
+- Crear orden de compra con datos del formulario.
+
+
+## `Campos de la base de datos del producto`
+category
+description
+img
+name
+price
+stock
+
+<img src="litehome_app_final.gif" alt="App Final Gif">

@@ -9,7 +9,7 @@ const CartWidget = () => {
 
     return (
         <div className="cartWidget">
-            <img src='/images/cart.svg' />
+            <img src='/images/cart.svg' alt="cart widget" />
             <p className="cartCount">{ totalQuantity }</p>
         </div>
     )
