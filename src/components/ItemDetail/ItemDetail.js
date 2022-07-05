@@ -5,7 +5,7 @@ import CartContext from '../../context/CartContext'
 import { Link } from 'react-router-dom'
 import { useNotification } from '../../notification/Notification'
 
-const ItemDetail = ({ id, name, price, img, stock }) => {
+const ItemDetail = ({ id, name, price, img, stock, description }) => {
     const [quantityAdded, setQuantityAdded] = useState(0)
 
     const { addItem } = useContext(CartContext)
@@ -27,6 +27,7 @@ const ItemDetail = ({ id, name, price, img, stock }) => {
                 { quantityAdded === 0
                 ? <ItemCount onAdd={handleOnAdd} stock={stock}/>
                 : <Link to='/cart'><button className="btnToCart">Terminar compra</button></Link>}
+                <p>{description}</p>
             </div>
         </div>
     )

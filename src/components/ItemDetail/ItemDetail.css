@@ -30,8 +30,14 @@
 }
 
 .itemDetail p {
-    color: #bbbbbb;
-    font-size: .7em;
+    max-width: 400px;
+    color: #868686;
+    font-size: 1em;
+    font-weight: 300;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 10%;
 }
 
 .itemDetail h2 {
@@ -58,6 +64,7 @@
     font-size: 1em;
     color: #000;
     margin: 0px 10px;
+    font-weight: 500;
 }
 
 .btnCart {
