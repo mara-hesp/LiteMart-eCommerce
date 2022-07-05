@@ -1,10 +1,10 @@
 import { useContext } from 'react'
 import CartContext from '../../context/CartContext'
-import NotificationContext from '../../notification/Notification'
+import { useNotification } from '../../notification/Notification'
 
 const CartItem = ({ name, count, price, id }) => {
     const { removeItems } = useContext(CartContext)
-    const setNotification = useContext(NotificationContext)
+    const setNotification = useNotification()
 
     const handleRemove = (id) => {
         removeItems(id)

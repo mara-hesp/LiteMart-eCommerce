@@ -1,5 +1,4 @@
-import { createContext } from "react"
-import { useState } from 'react'
+import { createContext, useContext, useState } from "react"
 import './Notification.css'
 
 const Notification = ( { message, severity }) => {
@@ -18,6 +17,8 @@ const Notification = ( { message, severity }) => {
         style: notificationStyle,
         className: `${severity === 'error' ? 'Error' : 'Success'}`
     } : {}
+
+    if (message === '') return
 
     return (
         <div {...config}>
@@ -43,10 +44,12 @@ export const NotificationProvider = ({ children }) => {
 
     return (
         <NotificationContext.Provider value={ setNotification }>
-          { msgConfig.message !== '' && <Notification message={msgConfig.message} severity={msgConfig.severity} />}
+          <Notification message={msgConfig.message} severity={msgConfig.severity} />
             { children }
         </NotificationContext.Provider>
     )
 }
 
-export default NotificationContext
+export const useNotification = () => {
+    return useContext(NotificationContext)
+}
